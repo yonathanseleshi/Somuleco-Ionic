@@ -30,7 +30,9 @@ const routes: Routes = [
   { path: 'settings', loadChildren: './settings/settings.module#SettingsPageModule' },
   { path: 'explore', loadChildren: './explore/explore.module#ExplorePageModule' },
   { path: 'course', loadChildren: './course/course.module#CoursePageModule' },
-  { path: 'lesson', loadChildren: './lesson/lesson.module#LessonPageModule' }
+  { path: 'lesson', loadChildren: './lesson/lesson.module#LessonPageModule' },
+  { path: 'authenticated', loadChildren: './authenticated/authenticated/authenticated.module#AuthenticatedPageModule' },
+  { path: 'unauthenticated', loadChildren: './unauthenticated/unauthenticated/unauthenticated.module#UnauthenticatedPageModule' }
 ];
 
 @NgModule({

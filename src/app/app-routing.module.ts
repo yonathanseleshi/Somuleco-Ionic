@@ -9,30 +9,30 @@ const routes: Routes = [
   },
   {
     path: 'home',
-    loadChildren: './home/home.module#HomePageModule'
+    loadChildren: './pages/home/home.module#HomePageModule'
   },
   {
     path: 'list',
-    loadChildren: './list/list.module#ListPageModule'
+    loadChildren: './pages/list/list.module#ListPageModule'
   },
-  { path: 'signup', loadChildren: './signup/signup.module#SignupPageModule' },
-  { path: 'login', loadChildren: './login/login.module#LoginPageModule' },
-  { path: 'profile', loadChildren: './profile/profile.module#ProfilePageModule' },
-  { path: 'confirmation', loadChildren: './confirmation/confirmation.module#ConfirmationPageModule' },
-  { path: 'learning-feed', loadChildren: './learning-feed/learning-feed.module#LearningFeedPageModule' },
-  { path: 'social-feed', loadChildren: './social-feed/social-feed.module#SocialFeedPageModule' },
-  { path: 'library', loadChildren: './library/library.module#LibraryPageModule' },
-  { path: 'learning-profile', loadChildren: './learning-profile/learning-profile.module#LearningProfilePageModule' },
-  { path: 'wallet', loadChildren: './wallet/wallet.module#WalletPageModule' },
-  { path: 'cart', loadChildren: './cart/cart.module#CartPageModule' },
-  { path: 'chat', loadChildren: './chat/chat.module#ChatPageModule' },
-  { path: 'my-library', loadChildren: './my-library/my-library.module#MyLibraryPageModule' },
-  { path: 'settings', loadChildren: './settings/settings.module#SettingsPageModule' },
-  { path: 'explore', loadChildren: './explore/explore.module#ExplorePageModule' },
-  { path: 'course', loadChildren: './course/course.module#CoursePageModule' },
-  { path: 'lesson', loadChildren: './lesson/lesson.module#LessonPageModule' },
-  { path: 'authenticated', loadChildren: './authenticated/authenticated/authenticated.module#AuthenticatedPageModule' },
-  { path: 'unauthenticated', loadChildren: './unauthenticated/unauthenticated/unauthenticated.module#UnauthenticatedPageModule' }
+  { path: 'signup', loadChildren: './pages/signup/signup.module#SignupPageModule' },
+  { path: 'login', loadChildren: './pages/login/login.module#LoginPageModule' },
+  { path: 'profile', loadChildren: './pages/profile/profile.module#ProfilePageModule' },
+  { path: 'confirmation', loadChildren: './pages/confirmation/confirmation.module#ConfirmationPageModule' },
+  { path: 'learning-feed', loadChildren: './pages/learning-feed/learning-feed.module#LearningFeedPageModule' },
+  { path: 'social-feed', loadChildren: './pages/social-feed/social-feed.module#SocialFeedPageModule' },
+  { path: 'library', loadChildren: './pages/library/library.module#LibraryPageModule' },
+  { path: 'learning-profile', loadChildren: './pages/learning-profile/learning-profile.module#LearningProfilePageModule' },
+  { path: 'wallet', loadChildren: './pages/wallet/wallet.module#WalletPageModule' },
+  { path: 'cart', loadChildren: './pages/cart/cart.module#CartPageModule' },
+  { path: 'chat', loadChildren: './pages/chat/chat.module#ChatPageModule' },
+  { path: 'my-library', loadChildren: './pages/my-library/my-library.module#MyLibraryPageModule' },
+  { path: 'settings', loadChildren: './pages/settings/settings.module#SettingsPageModule' },
+  { path: 'explore', loadChildren: './pages/explore/explore.module#ExplorePageModule' },
+  { path: 'course', loadChildren: './pages/course/course.module#CoursePageModule' },
+  { path: 'lesson', loadChildren: './pages/lesson/lesson.module#LessonPageModule' },
+  { path: 'authenticated', loadChildren: './pages/authenticated/authenticated/authenticated.module#AuthenticatedPageModule' },
+  { path: 'unauthenticated', loadChildren: './pages/unauthenticated/unauthenticated/unauthenticated.module#UnauthenticatedPageModule' }
 ];
 
 @NgModule({

@@ -1,0 +1,6 @@
+{
+  "appId": "com.somuleco",
+  "appName": "Somuleco-Ionic",
+  "bundledWebRuntime": false,
+  "webDir": "www"
+}

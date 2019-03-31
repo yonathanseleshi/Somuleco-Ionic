@@ -1,6 +1,8 @@
 {
   "name": "Somuleco-Ionic",
-  "integrations": {},
+  "integrations": {
+    "capacitor": {}
+  },
   "type": "angular",
   "id": "8c48483e"
 }

@@ -5,18 +5,22 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { IonicModule } from '@ionic/angular';
 
-import { UnauthenticatedPage } from './unauthenticated.page';
-import {UnauthenticatedRoutingModule} from './unauthenticated-routing.module';
+import { WelcomePage } from './welcome.page';
 
-
+const routes: Routes = [
+  {
+    path: '',
+    component: WelcomePage
+  }
+];
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-   UnauthenticatedRoutingModule
+    RouterModule.forChild(routes)
   ],
-  declarations: [UnauthenticatedPage]
+  declarations: [WelcomePage]
 })
-export class UnauthenticatedPageModule {}
+export class WelcomePageModule {}

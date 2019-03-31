@@ -32,7 +32,8 @@ const routes: Routes = [
   { path: 'course', loadChildren: './pages/course/course.module#CoursePageModule' },
   { path: 'lesson', loadChildren: './pages/lesson/lesson.module#LessonPageModule' },
   { path: 'authenticated', loadChildren: './pages/authenticated/authenticated/authenticated.module#AuthenticatedPageModule' },
-  { path: 'unauthenticated', loadChildren: './pages/unauthenticated/unauthenticated/unauthenticated.module#UnauthenticatedPageModule' }
+  { path: 'unauthenticated', loadChildren: './pages/unauthenticated/unauthenticated/unauthenticated.module#UnauthenticatedPageModule' },
+  { path: 'welcome', loadChildren: './pages/welcome/welcome.module#WelcomePageModule' }
 ];
 
 @NgModule({

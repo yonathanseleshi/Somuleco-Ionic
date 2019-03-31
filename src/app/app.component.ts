@@ -10,7 +10,7 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 })
 export class AppComponent {
 
-    isAuthenticated = false;
+
 
   constructor(
     private platform: Platform,

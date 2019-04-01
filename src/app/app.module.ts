@@ -11,10 +11,16 @@ import { AppRoutingModule } from './app-routing.module';
 
 // Components
 import {AuthenticatedPage} from './pages/authenticated/authenticated/authenticated.page';
+import {AuthenticatedComponent} from './components/authenticated/authenticated.component';
+import {UnauthenticatedComponent} from './components/unauthenticated/unauthenticated.component';
 
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [
+      AppComponent,
+      UnauthenticatedComponent,
+      AuthenticatedComponent
+  ],
   entryComponents: [],
   imports: [
     BrowserModule,

@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-toolbar color="secondary">
+    <ion-buttons slot="end">
+
+      <ion-button routerLink="/login">
+        Login/Register
+      </ion-button>
+
+
+
+
+    </ion-buttons>
+    <ion-title>
+      Somuleco
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+  <ion-router-outlet></ion-router-outlet>
+
+  <ion-tabs>
+
+
+
+
+    <ion-tab-bar slot="bottom">
+
+      <ion-tab-button tab="welcome">
+        <ion-icon name="home"></ion-icon>
+        <ion-label>Welcome</ion-label>
+
+      </ion-tab-button>
+
+      <ion-tab-button tab="explore">
+        <ion-icon name="globe"></ion-icon>
+        <ion-label>Explore</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="library">
+        <ion-icon name="laptop"></ion-icon>
+        <ion-label>Library</ion-label>
+      </ion-tab-button>
+
+
+    </ion-tab-bar>
+
+  </ion-tabs>
+
+</ion-content>

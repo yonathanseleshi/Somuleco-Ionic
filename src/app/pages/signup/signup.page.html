@@ -6,4 +6,89 @@
 
 <ion-content>
 
+
+  <form (ngSubmit)="onSignup()">
+  <ion-grid>
+
+    <ion-row>
+
+      <ion-col size="sm-6" offset-sm="3">
+        <ion-list padding>
+
+          <ion-item>
+
+            <ion-input type="text" placeholder="First Name"
+                       name="fName"
+                       id="fName"
+                       formControlName="fName"></ion-input>
+          </ion-item>
+          <ion-item>
+
+            <ion-input type="text" placeholder="Last Name"
+                       name="lName"
+                       id="lName"
+                       formControlName="lName"></ion-input>
+          </ion-item>
+
+          <ion-item>
+
+            <ion-input type="text" placeholder="Username"
+                       name="userName"
+                       id="userName"
+                       formControlName="userName"></ion-input>
+          </ion-item>
+
+
+          <ion-item>
+
+            <ion-input type="text" placeholder="Display Name"
+                       name="displayName"
+                       id="displayName"
+              formControlName="displayName"></ion-input>
+          </ion-item>
+
+
+          <ion-item>
+
+            <ion-input type="email" placeholder="Email"
+                       name="email"
+                       id="email"
+            formControlName="email"></ion-input>
+          </ion-item>
+
+
+          <ion-item>
+
+            <ion-input type="password" placeholder="Password" name="password" id="password" formControlName="password"></ion-input>
+          </ion-item>
+
+
+          <ion-item>
+
+            <ion-input type="password" placeholder="Confirm Password"
+                       name="confirmPassword"
+                       id="confirmPassword"
+                       formControlName="confirmPassword"></ion-input>
+          </ion-item>
+
+
+        </ion-list>
+      </ion-col>
+
+
+
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="sm-6" offset-sm="3">
+
+        <ion-button [disabled]="!signupForm.valid">Register</ion-button>
+        <p>Existing user?</p>
+        <ion-button fill="clear">Go to Login</ion-button>
+      </ion-col>
+
+    </ion-row>
+  </ion-grid>
+  </form>
+
 </ion-content>
